@@ -1,17 +1,327 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Token Efficiency - Optimiza tus conversaciones con IA</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Efficiency | Optimiza tus conversaciones con IA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
+
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+    <div class="container">
+        <header>
+            <h1><span class="rocket-icon"><i class="fas fa-bolt"></i></span> Token Efficiency</h1>
+            <p class="description">Configuraciones personalizadas para que las IA respondan como yo quiero. <span class="accent-text">Directo, sin relleno.</span></p>
+            <div class="stats-bar">
+                <div class="stat-item"><span class="stat-value">63%</span><span class="stat-label">Ahorro</span></div>
+                <div class="stat-item"><span class="stat-value">3</span><span class="stat-label">IAs</span></div>
+                <div class="stat-item"><span class="stat-value">5</span><span class="stat-label">Perfiles</span></div>
+                <div class="stat-item"><span class="stat-value">MIT</span><span class="stat-label">Licencia</span></div>
+            </div>
+        </header>
+
+        <main>
+            <section id="problem">
+                <h2><i class="fas fa-exclamation-triangle"></i> El Problema</h2>
+                <div class="grid-features">
+                    <div class="feature-card">
+                        <i class="fas fa-comment-dots"></i>
+                        <h3>Introducciones innecesarias</h3>
+                        <p>Empiezan con "¡Claro!", "Buena pregunta", "¡Por supuesto!"</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <h3>Cierres extensos</h3>
+                        <p>Terminan con "Espero que te ayude", "¿Necesitas algo más?"</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-copy"></i>
+                        <h3>Repeticiones</h3>
+                        <p>Repiten tu pregunta antes de dar la respuesta</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Sugerencias no pedidas</h3>
+                        <p>Añaden consejos que no solicitaste</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-overdrive"></i>
+                        <h3>Sobre-ingeniería</h3>
+                        <p>Soluciones complejas para problemas simples</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Caracteres problemáticos</h3>
+                        <p>Usan Unicode que rompen parsers</p>
+                    </div>
+                </div>
+                <p class="highlight-text"><i class="fas fa-times-circle"></i> Todo esto gasta tokens. Nada aporta valor.</p>
+            </section>
+
+            <section id="solution">
+                <h2><i class="fas fa-lightning-charge"></i> La Solución</h2>
+                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">Perfiles para <strong style="color: var(--accent-cyan);">Claude</strong>, <strong style="color: var(--accent-purple);">OpenCode</strong> y <strong style="color: var(--accent-emerald);">Gemini</strong> que eliminan el ruido.</p>
+                <div class="solution-card">
+                    <div class="code-block">
+                        <i class="fas fa-terminal"></i> cp claude/CLAUDE.md ./tu-proyecto/
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 1rem;"><i class="fas fa-check"></i> Lo lee automáticamente. El comportamiento cambia al instante.</p>
+                </div>
+            </section>
+
+            <section id="results">
+                <h2><i class="fas fa-chart-line"></i> Resultados</h2>
+                <div class="results-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Test</th>
+                                <th>Sin config</th>
+                                <th>Con config</th>
+                                <th>Reducción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Explicar async/await</td>
+                                <td>180 palabras</td>
+                                <td>65 palabras</td>
+                                <td class="reduction">64%</td>
+                            </tr>
+                            <tr>
+                                <td>Code review</td>
+                                <td>120 palabras</td>
+                                <td>30 palabras</td>
+                                <td class="reduction">75%</td>
+                            </tr>
+                            <tr>
+                                <td>Qué es REST API</td>
+                                <td>110 palabras</td>
+                                <td>55 palabras</td>
+                                <td class="reduction">50%</td>
+                            </tr>
+                            <tr>
+                                <td>Corrección errores</td>
+                                <td>55 palabras</td>
+                                <td>20 palabras</td>
+                                <td class="reduction">64%</td>
+                            </tr>
+                            <tr class="total-row">
+                                <td><strong>TOTAL</strong></td>
+                                <td><strong>465 palabras</strong></td>
+                                <td><strong>170 palabras</strong></td>
+                                <td class="reduction"><strong>63%</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="text-align: center; margin-top: 1.5rem; color: var(--text-muted);"><em>Mismo contenido técnico. Solo se eliminó el relleno.</em></p>
+            </section>
+
+            <section id="profiles">
+                <h2><i class="fas fa-user-cog"></i> Perfiles</h2>
+                <div class="grid-features">
+                    <div class="feature-card profile claude">
+                        <h3><i class="fas fa-robot"></i> Claude</h3>
+                        <p>Universal - Optimización base para cualquier proyecto</p>
+                        <span class="tag tag-claude">Anthropic</span>
+                    </div>
+                    <div class="feature-card profile claude">
+                        <h3><i class="fas fa-code"></i> Claude</h3>
+                        <p>Coding - Desarrollo, code review, debug</p>
+                        <span class="tag tag-claude">Anthropic</span>
+                    </div>
+                    <div class="feature-card profile claude">
+                        <h3><i class="fas fa-tachometer-alt"></i> Claude</h3>
+                        <p>Benchmark - Máxima reducción de tokens</p>
+                        <span class="tag tag-claude">Anthropic</span>
+                    </div>
+                    <div class="feature-card profile claude">
+                        <h3><i class="fas fa-chart-pie"></i> Claude</h3>
+                        <p>Analysis - Análisis de datos y research</p>
+                        <span class="tag tag-claude">Anthropic</span>
+                    </div>
+                    <div class="feature-card profile claude">
+                        <h3><i class="fas fa-network"></i> Claude</h3>
+                        <p>Agents - Pipelines y automatización</p>
+                        <span class="tag tag-claude">Anthropic</span>
+                    </div>
+                    <div class="feature-card profile opencode">
+                        <h3><i class="fas fa-bolt"></i> OpenCode</h3>
+                        <p>Universal - Tareas generales con eficiencia</p>
+                        <span class="tag tag-opencode">OpenCode</span>
+                    </div>
+                    <div class="feature-card profile gemini">
+                        <h3><i class="fas fa-gem"></i> Gemini</h3>
+                        <p>Universal - Configuración para Google AI</p>
+                        <span class="tag tag-gemini">Google</span>
+                    </div>
+                    <div class="feature-card profile o1">
+                        <h3><i class="fas fa-brain"></i> o1/o3</h3>
+                        <p>Universal - Optimización para reasoning models</p>
+                        <span class="tag tag-o1">OpenAI</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="comparison">
+                <h2><i class="fas fa-balance-scale"></i> Antes vs Después</h2>
+                <div class="comparison-grid">
+                    <div class="comparison-card before">
+                        <div class="comparison-label"><i class="fas fa-times"></i> Sin configuración</div>
+                        <div class="comparison-content">¡Claro! Me encantaría ayudarte con eso. Veo que tienes un bucle y hay un pequeño detalle que conviene revisar. La condición i &lt;= arr.length debería ser i &lt; arr.length, ya que usar &lt;= causa un error off-by-one... También podrías considerar usar métodos modernos como forEach o map... ¡Espero que esto te haya sido útil! No dudes en compartir más código.</div>
+                        <div class="word-count">120 palabras</div>
+                    </div>
+                    <div class="comparison-card after">
+                        <div class="comparison-label"><i class="fas fa-check"></i> Con configuración</div>
+                        <div class="comparison-content">Bug: &lt;= causa off-by-one. arr[arr.length] es undefined.
+
+Fix:
+for (let i = 0; i &lt; arr.length; i++)</div>
+                        <div class="word-count success">30 palabras • 75% menos</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="style">
+                <h2><i class="fas fa-paint-brush"></i> Mi Estilo</h2>
+                <div class="style-grid">
+                    <div class="style-card never">
+                        <h4><i class="fas fa-times-circle"></i> Nunca hacer</h4>
+                        <ul>
+                            <li><i class="fas fa-minus"></i> Sin "¡Claro!" ni "Con gusto"</li>
+                            <li><i class="fas fa-minus"></i> Sin "Espero que te ayude"</li>
+                            <li><i class="fas fa-minus"></i> Sin código incompleto o "# TODO"</li>
+                            <li><i class="fas fa-minus"></i> Sin sobreingeniería</li>
+                            <li><i class="fas fa-minus"></i> Sin tests si no se piden</li>
+                        </ul>
+                    </div>
+                    <div class="style-card always">
+                        <h4><i class="fas fa-check-circle"></i> Siempre hacer</h4>
+                        <ul>
+                            <li><i class="fas fa-plus"></i> Código completo y ejecutable</li>
+                            <li><i class="fas fa-plus"></i> Respuesta directa al problema</li>
+                            <li><i class="fas fa-plus"></i> Primero lo simple, luego lo óptimo</li>
+                            <li><i class="fas fa-plus"></i> Comandos de instalación si hacen falta</li>
+                            <li><i class="fas fa-plus"></i> Open source siempre</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="stack">
+                <h2><i class="fas fa-layer-group"></i> Stack</h2>
+                <div class="stack-grid">
+                    <div class="stack-item">
+                        <i class="fab fa-ubuntu"></i>
+                        <div class="tech">Ubuntu / Debian</div>
+                        <div class="pref">SO</div>
+                    </div>
+                    <div class="stack-item">
+                        <i class="fab fa-python"></i>
+                        <div class="tech">Python + Flask</div>
+                        <div class="pref">Backend</div>
+                    </div>
+                    <div class="stack-item">
+                        <i class="fab fa-react"></i>
+                        <div class="tech">React + TS</div>
+                        <div class="pref">Frontend</div>
+                    </div>
+                    <div class="stack-item">
+                        <i class="fas fa-terminal"></i>
+                        <div class="tech">Python · Bash</div>
+                        <div class="pref">Scripting</div>
+                    </div>
+                    <div class="stack-item">
+                        <i class="fas fa-database"></i>
+                        <div class="tech">MariaDB / SQLite</div>
+                        <div class="pref">DB</div>
+                    </div>
+                    <div class="stack-item">
+                        <i class="fas fa-server"></i>
+                        <div class="tech">Nginx / Apache</div>
+                        <div class="pref">Web</div>
+                    </div>
+                    <div class="stack-item">
+                        <i class="fab fa-docker"></i>
+                        <div class="tech">Docker</div>
+                        <div class="pref">Contenedores</div>
+                    </div>
+                    <div class="stack-item">
+                        <i class="fab fa-git-alt"></i>
+                        <div class="tech">Git</div>
+                        <div class="pref">Versiones</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="install">
+                <h2><i class="fas fa-download"></i> Instalación</h2>
+                <div class="install-grid">
+                    <div class="install-option">
+                        <h3><i class="fas fa-copy"></i> Opción 1: Copiar archivo</h3>
+                        <div class="code">cp claude/CLAUDE.md ./tu-proyecto/</div>
+                    </div>
+                    <div class="install-option">
+                        <h3><i class="fab fa-git-alt"></i> Opción 2: Clonar repo</h3>
+                        <div class="code">git clone https://github.com/Haplee/token-efficiency.git</div>
+                    </div>
+                    <div class="install-option">
+                        <h3><i class="fas fa-cloud-download-alt"></i> Opción 3: Descargar directo</h3>
+                        <div class="code">curl -o CLAUDE.md https://raw.githubusercontent.com/Haplee/token-efficiency/main/claude/CLAUDE.md</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="override">
+                <div class="override-section">
+                    <h2><i class="fas fa-shield-alt"></i> Regla de Override</h2>
+                    <p>Las instrucciones del usuario siempre priman. Si pides una explicación detallada o output verbose, la IA lo hará. El archivo nunca pelea contra ti.</p>
+                </div>
+            </section>
+
+            <section id="tradeoff">
+                <h2><i class="fas fa-balance-scale-right"></i> Cuándo ayuda vs cuándo no</h2>
+                <div class="tradeoff-grid">
+                    <div class="tradeoff-card help">
+                        <h3><i class="fas fa-check-circle"></i> Ayuda cuando</h3>
+                        <ul>
+                            <li><i class="fas fa-arrow-right"></i> Pipelines con alto volumen de output</li>
+                            <li><i class="fas fa-arrow-right"></i> Tareas repetitivas estructuradas</li>
+                            <li><i class="fas fa-arrow-right"></i> Output consistente y parseable</li>
+                            <li><i class="fas fa-arrow-right"></i> Sesiones persistentes largas</li>
+                        </ul>
+                    </div>
+                    <div class="tradeoff-card no-help">
+                        <h3><i class="fas fa-times-circle"></i> No ayuda cuando</h3>
+                        <ul>
+                            <li><i class="fas fa-arrow-right"></i> Consultas cortas puntuales</li>
+                            <li><i class="fas fa-arrow-right"></i> Uso casual de una sola vez</li>
+                            <li><i class="fas fa-arrow-right"></i> Debate arquitectónico o alternativas</li>
+                        </ul>
+                    </div>
+                </div>
+                <p style="margin-top: 1.5rem; color: var(--text-muted); text-align: center;"><em>El trade-off: El archivo consume input tokens en cada mensaje. Solo compensa con volumen de output suficiente.</em></p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-links">
+                <a href="https://github.com/Haplee" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://github.com/Haplee/token-efficiency" target="_blank"><i class="fas fa-code"></i> Repositorio</a>
+                <a href="https://instagram.com/franvidalmateo" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://x.com/FranVidalMateo" target="_blank"><i class="fab fa-twitter"></i> X</a>
+            </div>
+            <p>&copy; 2026 Token Efficiency. MIT License.</p>
+        </footer>
+    </div>
+
+    <button id="scrollTop" class="scroll-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
